@@ -1,0 +1,493 @@
+@import url('reset.css');
+
+body{
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #0e2029;
+  color:aliceblue ;
+}
+
+/* Professor, não entendi porque o W3C está dizendo que na linha 23 dá 
+"Erro de valor : display flexbox não é um valor display : flexbox".
+Agora fiquei na dúvida se retiro o flexbox e não atendo a rúbrica 6.2.
+Ou deixo o flexbox e não atendo a rúbrica 4.4.
+
+Eu usei display flex nas filhas de container pra organizar o layout,
+se eu incluir display flex na linha 23 vai distorcer tudo.
+
+Se retirar a linha 23, tudo ocorre normalmente, mas aí eu não atenderia uma rúbrica.
+*/
+#container{
+  width: 1024px;
+  margin: 0 auto;
+  /* display: flexbox; */
+}
+
+.logotipo{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+header{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+main{
+  min-height: 600px;
+  padding: 15px 10px 10px 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+p{
+  margin: 10px;
+}
+
+.apenasTexto{
+  margin-bottom: 10px;
+}
+
+.espacamento{
+  margin-top: 45px;
+}
+
+#lista{
+  width: 98%;
+  margin-top: 15px;
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+}
+
+#secundaria{
+  width: 98%;
+  margin-top: 20px;
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+#conteudo{
+  border: 3px outset rgb(241, 9, 152, 0.9);
+  background-color: rgba(255, 255, 255, 0.062);
+  width: 250px;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+#conteudo:hover{
+  transition: 0.2s;
+  border: aliceblue 3px outset;
+}
+
+#imagem:hover{
+transition: 0.2s;
+transform: scale(1.03);
+}
+
+header{
+  text-align: center;
+  margin: 0 auto;
+}
+
+#busca{
+  display: none;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+#artista {
+  font-size: 1.4em;
+  padding: 5px;
+  color:  rgb(255, 255, 255);
+}
+
+#sArtista{
+  font-size: 1.5em;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+}
+
+#musica{
+  font-size: 1em;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+}
+
+#artistaMusica{
+  font-size: 1em;
+  padding: 10px;
+  color: rgb(252, 185, 2);
+}
+.displaynone{
+  display: none;
+}
+
+.menu{
+  background-color: rgb(241, 9, 152, 0.9);
+  width: 98%;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.menu ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+.menu ul li a{
+  color: aliceblue;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+}
+
+ul{
+  text-align: center;
+}
+
+li{
+  font-size: 20px;
+}
+
+h2{
+  padding-top: 15px;
+  color: aliceblue;
+  font-size: 1.8em;
+}
+h3{
+  color: aliceblue;
+  font-size: 1.4em;
+}
+
+#jsH2{
+  visibility: hidden;
+  font-size: 1.2em;
+}
+
+#secLista{
+  width: 98%;
+  text-align: center;
+}
+
+select{
+  height: 39px;
+  width: 100%;
+  border: 2px rgb(241, 9, 152, 0.9) outset;
+  border-radius: 15px;
+  margin-top: 10px;
+  text-align: center;
+  padding-left:30%;
+  padding-right: 30%;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: aliceblue;
+}
+
+select option{
+  color: aliceblue;
+  background-color: rgb(241, 9, 152, 0.9);
+
+}
+
+input{
+  height: 33px;
+  width: 86%;
+  border-radius: 15px 0px 0px 15px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px outset rgb(241, 9, 152, 0.9);
+  border-right: none;
+  color: aliceblue;
+  padding-left: 15px;
+  margin-right: -1px;
+}
+
+.pesquisa button{
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 39px;
+  width: 10%;
+  margin-left: -5px;
+  border-radius: 0px 15px 15px 0px;
+  color: aliceblue;
+  border: 2px outset rgb(241, 9, 152, 0.9);
+  border-left: none;
+  font-size: 13px;
+  transition-duration: 0.2s;
+}
+
+.buto:hover{
+  color:  rgb(241, 9, 152, 0.9);
+}
+
+*:focus{
+  outline: none;
+}
+
+.pesquisa{
+  width: 500px;
+  margin: 0 auto;
+}
+
+footer{
+  font-size: 12px !important;
+  text-align: right;
+  bottom: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+footer a:link {
+  color: rgb(241, 9, 151, 0.9);
+  text-decoration: none;
+  font-size: 25px;
+  padding-right: 5px;
+}
+
+footer a:visited {
+  color: rgb(241, 9, 152, 0.9);
+}
+
+footer a:hover {
+  color: hotpink;
+}
+
+footer a:active {
+  color: blue;
+}
+
+#contato{
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  order: 0;
+}
+
+.tituloContato{
+  width: 100%;
+}
+
+.divContato{
+  width: 50%;
+  border-right: aliceblue 2px outset;
+}
+
+.divMidiasSociais{
+  vertical-align: top;
+  width: 45%;
+  margin-left: 10px;
+}
+
+.divIcones{
+  margin-left: 8px;
+}
+
+form{
+  padding: 10px;
+  border-radius: 5px;
+}
+
+form input{
+  height: 25px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  border: none;
+  margin-bottom: 5px;
+  color:darkslategrey;
+  font-size: 14px;
+}
+
+form textarea{
+  padding-left: 10px;
+  width: 87%;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form input[type='submit'] {
+  width: 40%;
+  height: 25px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: aliceblue;
+  font-size: 16px;
+}
+
+form input[type='submit']:hover{
+  transition: 0.2s;
+  background-color:  rgb(241, 9, 152, 0.9);
+}
+
+form input[type='reset']{
+  width: 40%;
+  height: 25px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: aliceblue;
+  font-size: 16px;
+}
+
+form input[type='reset']:hover{
+  transition: 0.2s;
+  background-color:  rgba(241, 9, 9, 0.9);
+}
+
+.botoes{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icone{
+  font-size: 50px;
+  color: aliceblue;
+  margin-left: 5px;
+}
+
+.icone:hover{
+  transition: 0.2s;
+  color:  rgb(241, 9, 152, 0.9);
+}
+
+/* ----------------- */
+/* ------Tablet----- */
+/* ---------------- */
+@media (min-width: 499px) and (max-width: 800px) {
+  #container{
+    width: 100%;
+  }
+
+  .menu{
+    width: 90%;
+  }
+
+  .menu ul li a{
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  li{
+    font-size: 18px;
+  }
+
+  .divContato{
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 98%;
+    border-right: none;
+    order: 1;
+  }
+  
+  .divMidiasSociais{
+    width: 100%;
+    margin-left: 10px;
+    order: 0;
+  }
+
+}
+
+/* Professor, nao consegui testar com telas menores que 500 pra simular um celular,
+então trabalheoi com 500px mesmo */
+/* Smartphone */
+@media (min-width: 324px) and (max-width: 500px) {
+  body{
+    font-size: 14px;
+  }
+
+  .menu{
+    width: 95%;
+  }
+  
+  .menu ul li{
+    padding: 10px;
+  }
+  
+  .menu ul li a{
+    margin-left: 0px;
+  }
+
+  .divContato{
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 98%;
+    border-right: none;
+    order: 1;
+  }
+  
+  .divMidiasSociais{
+    width: 100%;
+    margin-left: 10px;
+    order: 0;
+  }
+
+  footer a:link {
+    font-size: 20px;
+  }
+
+  .logotipo img{
+    width: 120px;
+  }
+
+  h2{
+    padding-top: 15px;
+    color: aliceblue;
+    font-size: 1.5em;
+  }
+  h3{
+    color: aliceblue;
+    font-size: 1em;
+  }
+  
+  #jsH2{
+    visibility: hidden;
+    font-size: 14px;
+  }
+
+  .icone{
+    font-size: 35px;
+    margin-left: 3px;
+  }
+
+  select{
+    height: 39px;
+    width: 100%;
+    padding-left:30%;
+    padding-right: 30%;
+    font-size: 14px;
+  }
+  
+  select option{
+    color: aliceblue;  
+  }
+  
+  input{
+    width: 85%;
+    font-size: 14px;
+    padding-left: 15px;
+    margin-right: 0px;
+  }
+  
+  .pesquisa button{
+    height: 38px;
+    width: 9%;
+    margin-left: -4px;
+    font-size: 13px;
+  }
+  
+  .pesquisa{
+    width: 400px;
+  }
+  
+}

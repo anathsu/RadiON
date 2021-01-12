@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Willian Nascimento - Infnet Aluno">
+		<meta name="description" content="Assessment DR1 e DR2 Front-End Instituto Infnet">
+    <meta name="keywords" content="html, html5, javascript">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>DR2-Javascript-AT</title>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1 class="displaynone">Assessment DR2 Javascript Instituto Infnet</h1>
+
+				<div class="logotipo" id="logo">
+          <img src="images/radionLogo.png" alt="Logotipo RadiON." title="Logotipo RadiON"/>
+          <h2>RadiON</h2>
+        </div>
+        
+        <nav class="menu">
+					<ul>
+						<li><a href="index.html">Interfaces Html</a></li>
+						<li><a href="javascript.html">Javascript</a></li>
+					</ul>
+        </nav>
+      </header>
+
+      <main>
+        <section id="secPesquisa">
+          <h2 class="displaynone">Pesquisa</h2>
+          <div class="pesquisa">
+            <select id="selecao" onchange="selecionarOpcao()">
+              <option id="0" value="nenhum" selected>Selecione uma opção</option>
+              <option id="1" value="artist/">Pesquisar por Artista</option>
+              <option id="2" value="search?q= ">Pesquisar por Música</option>
+            </select>
+          </div>
+      
+          <div id="busca" class="pesquisa">
+            <input type="text" id="termoBusca"/>
+            <button id="btnBusca" class="buto fas fa-search" onclick="buscar()"></button>
+          </div>
+        </section>
+
+        <section id="secLista">
+          <h2 id="jsH2">Resultado da busca: </h2>
+          <div id="lista"></div>
+          <div id="secundaria"></div>
+        </section>
+        
+        <script src="js/script.js"></script>
+      </main>
+
+      
+			<footer>
+				Copyright 2020, Willian Nascimento® <a href="#logo" title="Voltar ao topo" class="fas fa-angle-up"></a>
+			</footer>
+    </div>
+  </body>
+</html>
